@@ -41,26 +41,5 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5"
   },
-  "private": true,
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.css": [
-      "stylelint --fix",
-      "git add"
-    ]
-  },
-  "prettier": {
-    "bracketSpacing": false,
-    "jsxBracketSameLine": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  "private": true
 }
